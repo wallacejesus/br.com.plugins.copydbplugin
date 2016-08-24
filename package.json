@@ -1,0 +1,19 @@
+{
+    "version": "1.1.6",
+    "name": "br.com.plugins.copydbplugin",
+    "cordova_name": "Copy Data Base Plugin",
+    "description": "Plugin para copiar banco de dados para a pasta do pacote do projeto",
+    "keywords": [
+        "copy",
+        "database"
+    ],
+    "platforms": [
+        "android"
+    ],
+    "engines": [
+        {
+            "name": "cordova",
+            "version": ">=3.0.0"
+        }
+    ]
+}

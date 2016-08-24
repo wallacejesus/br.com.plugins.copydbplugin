@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="br.com.plugins.copydbplugin" version="1.1.6">
+    <name>Copy Data Base Plugin</name>
+    <author>Wallace Jesus</author>
+    <description>Plugin para copiar banco de dados para a pasta do pacote do projeto</description>
+    <keywords>copy,database</keywords>
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+    <js-module src="www/CopyDataBasePlugin.js" name="CopyDataBasePlugin">
+        <clobbers target="CopyDataBasePlugin" />
+    </js-module>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="CopyDataBasePlugin">
+                <param name="android-package" value="br.com.plugins.copydbplugin.CopyDataBasePlugin" />
+            </feature>
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        </config-file>
+        <source-file src="src/android/CopyDataBasePlugin.java" target-dir="src/br/com/plugins/copydbplugin" />
+    </platform>
+</plugin>
