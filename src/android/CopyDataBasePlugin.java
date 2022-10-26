@@ -40,11 +40,11 @@ public class CopyDataBasePlugin extends CordovaPlugin{
 		        }			
 
 			} catch (JSONException e) {
-				callbackContext.error("Não foi infomado o banco de dados: "+e.getMessage());
+				callbackContext.error("Nï¿½o foi infomado o banco de dados: "+e.getMessage());
 				return false;
 			}
 
-			
+
 				
 		}
 		else if(action.equalsIgnoreCase("delete")){
@@ -67,12 +67,12 @@ public class CopyDataBasePlugin extends CordovaPlugin{
 		        }			
 
 			} catch (JSONException e) {
-				callbackContext.error("Não foi infomado o banco de dados: "+e.getMessage());
+				callbackContext.error("Nï¿½o foi infomado o banco de dados: "+e.getMessage());
 				return false;
 			}			
 		}
 		else{
-			callbackContext.error(action+" Não existe");
+			callbackContext.error(action+" Nï¿½o existe");
 			return false;
 		}
 
